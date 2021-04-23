@@ -42,7 +42,8 @@ a {
 .header-main{
     height: 80px;
     width: 100vw;
-    background-color: rgba(255, 255, 255, 0.96);
+    background-color: rgba(255,255,255,0.96);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08);
     display: flex;
 }
 
@@ -277,10 +278,6 @@ a {
 }
 
 .small-arrow-right{
-    /* content: "";
-    left: 13px; */
-    /* z-index: 11;
-    display: block; */
     margin-top: 11px;
     width: 8px;
     height: 8px;
@@ -289,19 +286,161 @@ a {
     transform: rotate(135deg);
 }
 
+.cards{
+    margin: -100px auto;
+    width: 1416px;
+    height: 564px;
+    display: flex;
+}
+
+.small-card{
+    margin-left: 0;
+    margin-top: 140px;
+    margin-right: 24px;
+    box-sizing: border-box;
+    height: 284px;
+    width: 200px;
+    border: 2px solid rgba(150,150,150,0.08);
+    border-radius: 8px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #EBEBEB 100%);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12);
+}
+
+.center-card-bg{
+    margin: 0 24px 0 0;
+    height: 564px;
+    width: 424px;
+    border-radius: 16px;
+    background-color: #FFC000;
+    box-shadow: 0 16px 40px 0 rgba(0,0,0,0.32)
+}
+
+.center-card{
+    box-sizing: border-box;
+    height: 556px;
+    width: 424px;
+    border: 2px solid rgba(150,150,150,0.08);
+    border-radius: 16px 16px 12px 12px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #EBEBEB 100%);
+}
+
+.center-card:hover{
+    background: linear-gradient(180deg, #373737 0%, #191919 100%);
+}
+
+.center-card:hover .get-a-device{
+    color: #FFFFFF;
+}
+
+.center-card:hover .start-text{
+    color: #FFFFFF;
+}
+
+.center-card:hover .small-arrow-right{
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+}
+
+.center-placeholder{
+    margin-top: 96px;
+    margin-left: 132px;
+    box-sizing: border-box;
+    height: 160px;
+    width: 160px;
+    border: 1px solid #979797;
+}
+
+.small-card-right{
+    margin-left: 0;
+    margin-top: 140px;
+    box-sizing: border-box;
+    height: 284px;
+    width: 200px;
+    border: 2px solid rgba(150,150,150,0.08);
+    border-radius: 8px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #EBEBEB 100%);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12);
+}
+
+.what-are-you-here-to-do {
+    margin-top: 184px;
+    margin-left: 224px;
+    color: #232323;
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: -0.2px;
+    line-height: 40px;
+    position: relative;
+}
+
+.small-card-text-container {
+    margin-top: 44px;
+    margin-left: 20px;
+    height: 72px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-card-text{
+    color: #232323;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    text-align: center;
+}
+
 @media only screen and (min-width: 1920px) {
     .container{
         width: 1416px;
+    }
+
+    .mtn-logo{
+        margin-left: 372px;
+    }
+
+    .search-and-customer{
+        margin-left: 468px;
+    }
+
+    .personal-business-toggle{
+        display: none;
+    }
+
+    .small-card, .small-card-right{
+        width: 216px;
+    }
+
+    .center-card, .center-card-bg{
+        width: 456px;
+    }
+
+    .img-placeholder{
+        margin-left: 68px;
+    }
+
+    .center-placeholder{
+        margin-left: 148px;
+    }
+
+    .get-a-device{
+        margin-left: 68px;
+    }
+
+    .start-button{
+        margin-left: 167px;
+    }
+
+    .small-card-text-container{
+        margin-left: 28px;
     }
 
     .grid{
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-gap: 24px;
-    }
-
-    .mtn-logo{
-        margin-left: 372px;
     }
 }
 
@@ -310,103 +449,18 @@ a {
         width: 1320px;
     }
 
-    .grid{
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-gap: 24px;
-    }
-
     .mtn-logo{
         margin-left: 168px;
     }
 
     .cards{
-        margin: -100px auto;
         width: 1320px;
-        height: 564px;
-        display: flex;
-    }
-    
-    .small-card{
-        margin-left: 0;
-        margin-top: 140px;
-        margin-right: 24px;
-        box-sizing: border-box;
-        height: 284px;
-        width: 200px;
-        border: 2px solid rgba(150,150,150,0.08);
-        border-radius: 8px;
-        background: linear-gradient(180deg, #FFFFFF 0%, #EBEBEB 100%);
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12);
     }
 
-    .center-card-bg{
-        margin: 0 24px 0 0;
-        height: 564px;
-        width: 424px;
-        border-radius: 16px;
-        background-color: #FFC000;
-        box-shadow: 0 16px 40px 0 rgba(0,0,0,0.32)
-    }
-
-    .center-card{
-        box-sizing: border-box;
-        height: 556px;
-        width: 424px;
-        border: 2px solid rgba(150,150,150,0.08);
-        border-radius: 16px 16px 12px 12px;
-        background: linear-gradient(180deg, #FFFFFF 0%, #EBEBEB 100%);
-    }
-
-    .center-placeholder{
-        margin-top: 96px;
-        margin-left: 132px;
-        box-sizing: border-box;
-        height: 160px;
-        width: 160px;
-        border: 1px solid #979797;
-    }
-
-    .small-card-right{
-        margin-left: 0;
-        margin-top: 140px;
-        box-sizing: border-box;
-        height: 284px;
-        width: 200px;
-        border: 2px solid rgba(150,150,150,0.08);
-        border-radius: 8px;
-        background: linear-gradient(180deg, #FFFFFF 0%, #EBEBEB 100%);
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12);
-    }
-
-    .what-are-you-here-to-do {
-        margin-top: 184px;
-        margin-left: 224px;
-        color: #232323;
-        font-size: 32px;
-        font-weight: 300;
-        letter-spacing: -0.2px;
-        line-height: 40px;
-        position: relative;
-    }
-
-    .small-card-text-container {
-        margin-top: 44px;
-        margin-left: 20px;
-        height: 72px;
-        width: 160px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .small-card-text{
-        color: #232323;
-        font-size: 20px;
-        font-weight: 500;
-        letter-spacing: -0.2px;
-        line-height: 24px;
-        text-align: center;
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 24px;
     }
 
 }
@@ -414,6 +468,39 @@ a {
 @media only screen and (min-width: 1080px) and (max-width: 1439px) {
     .container{
         width: 752px;
+    }
+
+    .mtn-logo{
+        margin-left: 152px;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .search-and-customer{
+        margin-left: 598px;
+    }
+
+    .personal-business-toggle{
+        display: none;
+    }
+
+    .what-are-you-here-to-do{
+        margin-left: 0px;
+        font-size: 24px;
+    }
+
+    .cards{
+        margin-left: -250px;
+    }
+
+    .arrow-left{
+        margin-left: 50px;
+    }
+
+    .arrow-right{
+        margin-left: 600px;
     }
 
     .grid{
