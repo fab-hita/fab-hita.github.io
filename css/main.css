@@ -22,8 +22,6 @@ a {
 .wrapper{
     height: 100vh;
     width: 100vw;
-    /* background-color: #FF0000;
-    opacity: 0.16; */
 }
 
 .header{
@@ -125,8 +123,6 @@ a {
 .container{
     height: 100vh;
     margin: auto;
-    background-color: #23F5FF;
-    opacity: 0.10;
 }
 
 .grid-container{
@@ -140,6 +136,93 @@ a {
     opacity: 0.75;
     
 }
+
+.img-placeholder{
+    margin-top: 56px;
+    margin-left: 60px;
+    box-sizing: border-box;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #979797;
+}
+  
+.wrap {
+    position: relative;
+    margin-top: 39px;
+    margin-left: -17px;
+    width: 111px;
+}
+
+.line {
+    height: 1px;
+    background-color: #979797;
+}
+  
+.left-rotate {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+  
+.right-rotate {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.arrows{
+    display: flex;
+}
+
+.arrow-left{
+    position: relative;
+    padding: 5px;
+    margin: 30px auto;
+    background-color: #232323;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.arrow-left::after{
+    content: "";
+    position: absolute;
+    left: 17px;
+    z-index: 11;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    top: 15px;
+    transform: rotate(-45deg);
+}
+
+.arrow-right{
+    position: relative;
+    padding: 5px;
+    margin: 30px auto;
+    background-color: #232323;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.arrow-right::after{
+    content: "";
+    position: absolute;
+    left: 13px;
+    z-index: 11;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    top: 15px;
+    transform: rotate(135deg);
+}
+
+
 
 @media only screen and (min-width: 1920px) {
     .container{
@@ -167,9 +250,82 @@ a {
         grid-template-columns: repeat(12, 1fr);
         grid-gap: 24px;
     }
+
     .mtn-logo{
         margin-left: 168px;
     }
+
+    .cards{
+        margin: -100px auto;
+        width: 1320px;
+        height: 564px;
+        display: flex;
+    }
+    
+    .small-card{
+        margin-left: 0;
+        margin-top: 140px;
+        margin-right: 24px;
+        box-sizing: border-box;
+        height: 284px;
+        width: 200px;
+        border: 2px solid rgba(150,150,150,0.08);
+        border-radius: 8px;
+        background: linear-gradient(180deg, #FFFFFF 0%, #EBEBEB 100%);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12);
+    }
+
+    .center-card{
+        margin: 0 24px 0 0;
+        height: 564px;
+        width: 424px;
+        border-radius: 16px;
+        background-color: #FFC000;
+        box-shadow: 0 16px 40px 0 rgba(0,0,0,0.32)
+    }
+
+    .small-card-right{
+        margin-left: 0;
+        margin-top: 140px;
+        box-sizing: border-box;
+        height: 284px;
+        width: 200px;
+        border: 2px solid rgba(150,150,150,0.08);
+        border-radius: 8px;
+        background: linear-gradient(180deg, #FFFFFF 0%, #EBEBEB 100%);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12);
+    }
+
+    .what-are-you-here-to-do {
+        margin-top: 184px;
+        margin-left: 224px;
+        color: #232323;
+        font-size: 32px;
+        font-weight: 300;
+        letter-spacing: -0.2px;
+        line-height: 40px;
+        position: relative;
+    }
+
+    .small-card-text-container {
+        margin-top: 44px;
+        margin-left: 20px;
+        height: 72px;
+        width: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .small-card-text{
+        color: #232323;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: -0.2px;
+        line-height: 24px;
+        text-align: center;
+    }
+
 }
 
 @media only screen and (min-width: 1080px) and (max-width: 1439px) {
