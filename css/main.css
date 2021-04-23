@@ -409,6 +409,10 @@ a {
         display: none;
     }
 
+    .what-are-you-here-to-do{
+        margin-left: 240px;
+    }
+
     .small-card, .small-card-right{
         width: 216px;
     }
