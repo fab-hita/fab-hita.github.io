@@ -64,3 +64,8 @@ function initCell(element, index) {
   
   baseTl.add(tl, i * -cellStep);
 }
+
+function jsTest(){
+  // document.getElementById("demo").innerHTML = "Hello World";
+  window.alert("Hi there!");
+}
