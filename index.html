@@ -16,7 +16,9 @@
           <div class="progress-bar"></div>
         </div>
         <div class="header-main">
-          <div class="mtn-logo"></div>
+          <div class="mtn-logo">
+            <img src="images/mtn-logo.png" width="88px" height="88px" alt="MTN Logo">
+          </div>
           <ul class="nav">
             <li><a href="#">Shop</a></li>
             <li><a href="#">Products & Services</a></li>
@@ -33,7 +35,7 @@
       </div>
         <div class="container">
           <div class="what-are-you-here-to-do">What are you <br/><strong>here to do?</strong></div>
-          <div class="cards">
+          <div id="round" class="cards" data-round="round1">
             <div id="card1">
               <div class="small-card">
                 <div class="img-placeholder">
@@ -114,7 +116,7 @@
 
           </div>
           <div class="arrows">
-            <div class="arrow-left"></div>
+            <div class="arrow-left" onclick="moveLeft()"></div>
             <div class="arrow-right" onclick="moveRight()"></div>
           </div>
         </div>
