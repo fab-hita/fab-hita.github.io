@@ -34,32 +34,38 @@
         <div class="container">
           <div class="what-are-you-here-to-do">What are you <br/><strong>here to do?</strong></div>
           <div class="cards">
-            <div class="small-card">
-              <div class="img-placeholder">
-                <div class="wrap">
-                  <div class="line left-rotate"></div>
-                  <div class="line right-rotate"></div>
+            <div id="card1">
+              <div class="small-card">
+                <div class="img-placeholder">
+                  <div class="wrap">
+                    <div class="line left-rotate"></div>
+                    <div class="line right-rotate"></div>
+                  </div>
                 </div>
-              </div>
-              <div class="small-card-text-container">
-                <div class="small-card-text">
-                  Mobile <br/>Internet
-                </div>
-              </div>
-            </div>
-            <div class="small-card">
-              <div class="img-placeholder">
-                <div class="wrap">
-                  <div class="line left-rotate"></div>
-                  <div class="line right-rotate"></div>
-                </div>
-              </div>
-              <div class="small-card-text-container">
-                <div class="small-card-text">
-                  Home <br/>Internet
+                <div class="small-card-text-container">
+                  <div class="small-card-text">
+                    Mobile <br/>Internet
+                  </div>
                 </div>
               </div>
             </div>
+
+            <div id="card2">
+              <div class="small-card">
+                <div class="img-placeholder">
+                  <div class="wrap">
+                    <div class="line left-rotate"></div>
+                    <div class="line right-rotate"></div>
+                  </div>
+                </div>
+                <div class="small-card-text-container">
+                  <div class="small-card-text">
+                    Home <br/>Internet
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="center-card-bg">
               <div class="center-card">
                 <div class="center-placeholder">
@@ -73,38 +79,47 @@
                 </div>
               </div>
             </div>
-            <div class="small-card">
-              <div class="img-placeholder">
-                <div class="wrap">
-                  <div class="line left-rotate"></div>
-                  <div class="line right-rotate"></div>
+
+            <div id="card4">
+              <div class="small-card">
+                <div class="img-placeholder">
+                  <div class="wrap">
+                    <div class="line left-rotate"></div>
+                    <div class="line right-rotate"></div>
+                  </div>
                 </div>
-              </div>
-              <div class="small-card-text-container">
-                <div class="small-card-text">
-                  Add a <br/>phone-line
-                </div>
-              </div>
-            </div>
-            <div class="small-card-right">
-              <div class="img-placeholder">
-                <div class="wrap">
-                  <div class="line left-rotate"></div>
-                  <div class="line right-rotate"></div>
-                </div>
-              </div>
-              <div class="small-card-text-container">
-                <div class="small-card-text">
-                  Upgrade
+                <div class="small-card-text-container">
+                  <div class="small-card-text">
+                    Add a <br/>phone-line
+                  </div>
                 </div>
               </div>
             </div>
+
+            <div id="card5">
+              <div id="small-card-right" class="small-card-right">
+                <div class="img-placeholder">
+                  <div class="wrap">
+                    <div class="line left-rotate"></div>
+                    <div class="line right-rotate"></div>
+                  </div>
+                </div>
+                <div class="small-card-text-container">
+                  <div class="small-card-text">
+                    Upgrade
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
           <div class="arrows">
             <div class="arrow-left"></div>
-            <div class="arrow-right"></div>
+            <div class="arrow-right" onclick="moveRight()"></div>
           </div>
         </div>
     </div>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
